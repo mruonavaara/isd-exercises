@@ -1,48 +1,48 @@
 // 
-// Näppäimen painalluksen käsittelevä funktio.
+// Function to handle button press.
 //
-function arvo() {
-    // tyhjennä vastauselementti edellisistä tuloksista
-    document.getElementById("vastaus").innerHTML = "";
+function rollDice() {
+    // clear the result element from previous results
+    document.getElementById("result").innerHTML = "";
 
-    // TODO: toteuta ohjelmalogiikka
-    // - lue toistojen määrä käyttäjän syötteestä
-    // - tee taulukko noppaluvuille
-    // - tee arvonnat ja kirjaa taulukkoon lukumäärät
-    // - tulosta taulukon perusteella kunkin noppaluvun frekvenssitiedot
-    //      - käytä tulostamiseen lisaaTulosrivi-funktiota
+    // TO DO: implement program logic
+    // - read the number of repetitions from user input
+    // - create an array for dice numbers
+    // - perform the rolls and record the counts in the array
+    // - based on the array, print the frequency information for each dice number
+    //      - use the addBar function for printing
     //
 
 }
 
 //
-// Noppaluvun arpova funktio
+// Function to roll a dice.
 //
-function heita() {
+function roll() {
     return Math.floor(Math.random() * 6 + 1);
 }
 
 //
-// Tulosrivin lisäävä funktio. Rivi lisätään elementtiin, jonka id on vastaus.
-// Parametrit:
-// - noppaluku
-// - luvun frekvenssi eli esiintymistiheys (kpl)
-// - luvun suhteellinen frekvenssi (%)
+// Function to add a result row. The row is added to the element with id "result".
+// Parameters:
+// - dice number
+// - frequency of the number (count)
+// - relative frequency of the number (%)
 // 
-function lisaaTulosrivi(noppaluku, frekvenssi, suhtFrekvenssi) {
-    var noppalukuElem = document.createElement("div");
-    noppalukuElem.classList.add("noppaluku")
-    noppalukuElem.innerHTML = "Noppaluku " + noppaluku + ": " + frekvenssi + " kpl ";
+function addBar(diceNumber, frequency, relativeFrequency) {
+    var diceNumberElem = document.createElement("div");
+    diceNumberElem.classList.add("diceNumber")
+    diceNumberElem.innerHTML = "Dice number " + diceNumber + ": " + frequency + " times ";
 
-    var palkkiElem = document.createElement("div");
-    palkkiElem.classList.add("palkki");
-    palkkiElem.innerHTML = suhtFrekvenssi + "%";
-    palkkiElem.style.width = suhtFrekvenssi + "%";
+    var barElem = document.createElement("div");
+    barElem.classList.add("bar");
+    barElem.innerHTML = relativeFrequency + "%";
+    barElem.style.width = relativeFrequency + "%";
 
-    var riviElem = document.createElement("div");
-    riviElem.classList.add("frekvenssirivi");
-    riviElem.appendChild(noppalukuElem);
-    riviElem.appendChild(palkkiElem);
+    var rowElem = document.createElement("div");
+    rowElem.classList.add("frequencyRow");
+    rowElem.appendChild(diceNumberElem);
+    rowElem.appendChild(barElem);
 
-    document.getElementById("vastaus").appendChild(riviElem);
+    document.getElementById("result").appendChild(rowElem);
 }

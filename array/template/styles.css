@@ -5,23 +5,23 @@ body {
     padding: 20px;
 }
 
-#vastaus {
+#result {
     display: flex;
     flex-direction: column;
 }
 
-.frekvenssirivi {
+.frequencyRow {
     display: flex;
     align-items: center;
     min-height: 40px;
     line-height: 40px;
 }
 
-.noppaluku {
+.dicenumber {
     min-width: 20   0px;
 }
 
-.palkki {
+.bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
