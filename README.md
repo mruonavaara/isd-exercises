@@ -1,4 +1,4 @@
-# Exercises for Introduction to Softwrae Development
+# Exercises for Introduction to Software Development
 
 This repository contains programming exercises for course _Introduction to Software Development_. 
 
