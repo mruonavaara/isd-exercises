@@ -1,5 +1,7 @@
 # Arrays
 
+You can find HTML-templates for the exercises in folder `templates`.
+
 ## 1. Cars
 
 The array to be used is:

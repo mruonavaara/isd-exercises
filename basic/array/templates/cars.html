@@ -26,36 +26,16 @@
 	<script>
 		"use strict";
 
-		let cars = ["Nissan", "Opel", "Peugeot", "Renault", "Audi", "Volvo", "Opel", "Audi"];
-
 		function listCars() {
-			let text = "";
-
-			for (let i = 0; i < cars.length; i++) {
-				text = text + cars[i] + "<br>";
-			}
-
-			document.getElementById("result").innerHTML = text;
+		
 		}
 
 		function countAppearances() {
-			let car = document.getElementById("car").value;
-
-			let count = 0;
-			for (let i = 0; i < cars.length; i++) {
-				if (cars[i] === car) {
-					count = count + 1;
-				}
-			}
-
-			document.getElementById("result").innerHTML = "Car " + car + " appears " + count + " times";
+		
 		}
 
 		function addCar() {
-			let car = document.getElementById("car").value;
 
-			cars.push(car);
-			listCars();
 		}
 
 </script>
