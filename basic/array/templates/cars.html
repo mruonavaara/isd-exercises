@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cars</title>
+
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<h3>Cars</h3>
+
+	<form>
+		<input type="button" value="List cars" onclick="listCars()">
+		<label>Car:</label>
+		<input type="text" id="car">
+		<input type="button" value="How many times appears" onclick="countAppearances()">
+		<input type="button" value="Add car" onclick="addCar()">
+	</form>
+
+	<p id="result"></p>
+
+	<script>
+		"use strict";
+
+		let cars = ["Nissan", "Opel", "Peugeot", "Renault", "Audi", "Volvo", "Opel", "Audi"];
+
+		function listCars() {
+			let text = "";
+
+			for (let i = 0; i < cars.length; i++) {
+				text = text + cars[i] + "<br>";
+			}
+
+			document.getElementById("result").innerHTML = text;
+		}
+
+		function countAppearances() {
+			let car = document.getElementById("car").value;
+
+			let count = 0;
+			for (let i = 0; i < cars.length; i++) {
+				if (cars[i] === car) {
+					count = count + 1;
+				}
+			}
+
+			document.getElementById("result").innerHTML = "Car " + car + " appears " + count + " times";
+		}
+
+		function addCar() {
+			let car = document.getElementById("car").value;
+
+			cars.push(car);
+			listCars();
+		}
+
+</script>
+</body>
+
+</html>

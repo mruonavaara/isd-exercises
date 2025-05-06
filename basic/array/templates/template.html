@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>XX</title>
+
+	<style>
+		label {
+			display: block;
+			width: 6em;
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>XX</h3>
+
+	<form>
+		<label>Label:</label>
+		<input type="text" id="field_id" size="30">
+		<input type="button" value="Show" onclick="showResult()">
+	</form>
+
+	<p id="result"></p>
+
+	<script>
+		"use strict";
+
+		function showResult() {
+
+			// read user input
+			let fieldValue = document.getElementById("field_id").value;
+
+			// produce result
+
+
+			// show result in document
+			document.getElementById("result").innerHTML = "Result not defined yet";
+		}
+	</script>
+</body>
+
+</html>

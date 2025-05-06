@@ -26,7 +26,11 @@ There may be updates to this repository in future. To update the assignments giv
 
 ## Exercises
 
-- [Conditional statement](./conditional_statement/exercise.md)
-- [Loops](./loops/exercise.md)
-- [Functions and loops](./functions_and_loops/exercise.md)
-- [Array](./array/exercise.md)
+Basic exercises:
+- [Array](basic/array/arrays.md)
+
+Applied exercises:
+- [Conditional statement](applied/conditional_statement/exercise.md)
+- [Loops](applied/loops/exercise.md)
+- [Functions and loops](applied/functions_and_loops/exercise.md)
+- [Array](applied/array/exercise.md)
