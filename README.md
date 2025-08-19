@@ -27,6 +27,7 @@ There may be updates to this repository in future. To update the assignments giv
 ## Exercises
 
 Basic exercises:
+- [HTML](basic/html/html.md)
 - [Array](basic/array/arrays.md)
 
 Applied exercises:
