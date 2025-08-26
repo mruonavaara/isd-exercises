@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Party cost</title>
+
+  <style>
+    label {
+      display: block;
+      width: 10em;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Party cost</h3>
+
+  <form>
+    <p>
+    <label>Number of guests:</label>
+    <input type="text" name="guests" id="guests" size="5">
+    </p>
+
+    <p>
+    <label>Bottle price:</label>
+    <input type="text" name="bottle_price" id="bottle_price" size="5">
+    </p>
+
+    <p>
+    <label>Catering cost per guest:</label>
+    <input type="text" name="catering_unit_price" id="catering_unit_price" size="5">
+    </p>
+
+
+    <input type="button" value="Calculate" onclick="calculate()">
+  </form>
+
+  <!-- Empty element for result, to be amended with JavaScript -->
+  <p id="result"></p>
+
+  <script src="party.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Discount</title>
+
+  <style>
+    label {
+      display: block;
+      width: 8em;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Discount</h3>
+
+  <form>
+    <p>
+    <label>Price:</label>
+    <input type="text" name="price" id="price" size="5">
+    </p>
+
+    <p>
+    <label>Discount (%):</label>
+    <input type="text" name="percentage" id="percentage" size="5">
+    </p>
+
+    <input type="button" value="Calculate" onclick="calculate()">
+  </form>
+
+  <!-- Empty element for result, to be amended with JavaScript -->
+  <p id="result"></p>
+
+  <script src="discount.js"></script>
+
+</body>
+
+</html>

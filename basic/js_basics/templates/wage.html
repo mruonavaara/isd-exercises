@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wage</title>
+
+  <style>
+    label {
+      display: block;
+      width: 8em;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Wage</h3>
+
+  <form>
+    <p>
+    <label>Hours:</label>
+    <input type="text" name="hours" id="hours" size="5">
+    </p>
+
+    <p>
+    <label>Hourly rate:</label>
+    <input type="text" name="rate" id="rate" size="5">
+    </p>
+
+    <input type="button" value="Calculate" onclick="calculate()">
+  </form>
+
+  <!-- Empty element for result, to be amended with JavaScript -->
+  <p id="result"></p>
+
+  <script src="wage.js"></script>
+
+</body>
+
+</html>
