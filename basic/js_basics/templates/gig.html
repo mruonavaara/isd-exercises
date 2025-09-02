@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gig</title>
+
+  <style>
+    label {
+      display: block;
+      width: 12em;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Gig</h3>
+
+  <p>
+    <label>Gig fee:</label>
+    <input type="text" id="fee" size="5">
+  </p>
+
+  <p>
+    <label>Number of musicians:</label>
+    <input type="text" id="musicians" size="5">
+  </p>
+
+  <p>
+    <label>Manager commission (%):</label>
+    <input type="text" id="commission" size="5">
+  </p>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <!-- Empty element for result, to be amended with JavaScript -->
+  <p id="result"></p>
+
+  <script src="gig.js"></script>
+
+</body>
+
+</html>

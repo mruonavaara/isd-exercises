@@ -10,14 +10,12 @@
 <body>
   <h3>Hours and minutes</h3>
 
-  <form>
-    <p>
-      <label>Travel time in minutes:</label>
-      <input type="text" name="total_minutes" id="total_minutes" size="5">
-    </p>
+  <p>
+    <label>Travel time in minutes:</label>
+    <input type="text" name="total_minutes" id="total_minutes" size="5">
+  </p>
 
-    <input type="button" value="Calculate" onclick="calculate()">
-  </form>
+  <button onclick="calculate()">Calculate</button>
 
   <!-- Empty element for result, to be amended with JavaScript -->
   <p id="answer"></p>

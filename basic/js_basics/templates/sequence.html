@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sum of arithmetic sequence</title>
+
+  <style>
+    label {
+      display: block;
+      width: 10em;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Sum of arithmetic sequence</h3>
+
+  <p>
+    <label>First term:</label>
+    <input type="text" id="first_term" size="5">
+  </p>
+
+  <p>
+    <label>Last term:</label>
+    <input type="text" id="last_term" size="5">
+  </p>
+
+  <p>
+    <label>Number of terms:</label>
+    <input type="text" id="number_of_terms" size="5">
+  </p>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <!-- Empty element for result, to be amended with JavaScript -->
+  <p id="result"></p>
+
+  <script src="sequence.js"></script>
+
+</body>
+
+</html>
