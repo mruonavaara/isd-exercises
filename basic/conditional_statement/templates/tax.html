@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Public broadcasting tax</title>
+  <script src="tax.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+    }
+
+    label,
+    input,
+    button {
+      font-size: 1em;
+    }
+
+    .result {
+      margin-top: 1em;
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Public broadcasting tax</h1>
+
+  <p>
+    <label for="income">Annual income (€): </label>
+    <input type="number" id="income" min="0" required>
+  </p>
+  <p>
+    <label for="age">Age: </label>
+    <input type="number" id="age" min="0" required>
+  </p>
+  <button onclick="calculateTax()">Calculate tax</button>
+  
+  <div class="result" id="result"></div>
+</body>
+
+</html>

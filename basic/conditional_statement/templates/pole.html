@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pole length calculator</title>
+    <script src="pole.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+        }
+
+        label,
+        input,
+        select,
+        button {
+            font-size: 1em;
+        }
+
+        .result {
+            margin-top: 1em;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pole length calculator</h1>
+    <p>
+        <label for="height">Enter your height (cm): </label>
+        <input type="number" id="height" min="0" required>
+    </p>
+    <p>
+        <label for="sport">Select sport: </label>
+        <select id="sport">
+            <option value="classic">Classic skiing</option>
+            <option value="skating">Skating skiing</option>
+            <option value="nordic">Nordic walking</option>
+        </select>
+    </p>
+    <button onclick="calculatePoleLength()">Calculate</button>
+
+    <div class="result" id="result"></div>
+</body>
+
+</html>
