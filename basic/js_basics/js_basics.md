@@ -107,7 +107,7 @@ __Hints__
 - Think of the order of operations!
 
 
-### 5. Party cost
+### 6. Party cost
 
 Write a program to calculate the costs of a party. The program asks for the number of invited guests, the price of a single bottle of sparkling wine, and the price of catering per guest. One bottle yields 7 glasses.
 
@@ -117,7 +117,7 @@ __Hints__
 - You can round up the number of bottles to the next whole integer using the `Math.ceil()` method.
 
 
-### 6. Hours and minutes
+### 7. Hours and minutes
 
 On a trip to the cottage, you stop for a break. During the break, the travelers want to practice their mental arithmetic skills. The task is to calculate the time spent on the trip in hours and minutes, as well as rounded up to the nearest hour, when the time spent is given in minutes. 
 
