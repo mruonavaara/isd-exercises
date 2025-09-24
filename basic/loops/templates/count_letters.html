@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Count letters</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Count letters</h1>
+
+  <label>Text:</label>
+  <textarea id="txt" rows="3" cols="50"></textarea>
+
+  <div>
+    <label>Letter to count:</label>
+    <input id="letter" size="1">
+  </div>
+
+  <button onclick="countLetters()">Count occurrences of letter</button>
+
+  <p id="result"></p>
+
+  <script src="count_letters.js"></script>
+</body>
+
+</html>

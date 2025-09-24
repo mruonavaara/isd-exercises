@@ -81,3 +81,33 @@ The program asks for the savings goal, the monthly saving amount, and shows how 
 
 >![](media/savings.png)
 
+## 5. Countdown
+
+Create a countdown from a specified number to 0. Use a while loop.
+
+The program outputs the countdown until liftoff is reached at zero.
+
+>![](media/countdown.png)
+
+## 6. Reverse text
+
+Write a program that reverses text.
+
+The program asks for a text and shows it reversed.
+
+>![](media/reverse1.png)
+
+
+## 7. Count letters
+
+Write a program that counts how many times a letter appears in a text.
+
+The program asks for the text passage and the letter to search, and shows the number of occurrences of the letter.
+
+>![](media/count_letters1.png)
+
+__Hints__
+
+- String literals can be defined also using single quotes (e.g. `'literal'`). If you do so, you can include double quote characters (`"`) in the string.
+
+
