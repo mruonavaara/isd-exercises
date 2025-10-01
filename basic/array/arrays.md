@@ -118,6 +118,8 @@ let average = total / temperatures.length; // why?
 // write the result
 ```
 
+__Hints__
+
 - The `toFixed(1)` method can be used to format the result to one decimal place.
 
 
