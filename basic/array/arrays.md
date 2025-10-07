@@ -102,6 +102,7 @@ Below is an array containing the average temperature for each month.
 let temperatures = [-3.3, -4.7, -1.3, 3.9, 10.2, 14.6, 17.8, 16.3, 11.5, 6.6, 1.6, -2.0];
 ```
 
+<!--
 The code is conceptually:
 
 ```js
@@ -117,10 +118,66 @@ let average = total / temperatures.length; // why?
 
 // write the result
 ```
+-->
 
 __Hints__
 
 - The `toFixed(1)` method can be used to format the result to one decimal place.
 
 
+## 5. Electricity prices
 
+Below are the hourly electricity prices for a certain day from 0-12 o'clock. 
+
+```javascript
+let hourlyPrices = [6.91, 3.26, 1.62, 0.66, 0.91, 0.99, 3.13, 5.01, 16.45,
+23.23, 17.32, 8.29, 3.77];
+```
+
+Write a program that lists the hourly prices, and the lowest and highest electricity price for the period.
+
+>![](media/electricity_prices1.png)
+
+
+## 6. Gift wishes
+
+Create a program that asks for gift wishes, lists them, and tells how many wishes have been given.
+
+Requirements:
+- Clear the input field after adding a wish.
+- Prevent empty wishes from being added to the array. An empty wish means when nothing or only spaces are entered in the wish field.
+
+>![](media/wishes1.png)
+
+__Hints__
+
+- You can implement the list as an HTML unordered list (`<ul>`).
+
+__Bonus task__
+- Set the mouse cursor (focus) into the wish field after adding a wish.
+
+
+## 7. Comma-separated values
+
+CSV is a format where data is in a string, with each piece of information (field) separated by a delimiter.
+
+Use the JavaScript string method `split` to split a csv-record into individual fields and use the field values to build the output.
+
+```javascript
+let studentRecord = "Jane Doe;12/24/1990;Helsinki;Haaga-Helia University of Applied Sciences";
+";
+```
+>![](media/csv1.png)
+
+## 8. Lottery
+
+Create a program that draws 7 different lottery numbers between 1-40. No lottery number may appear more than once!
+
+>![](media/lottery1.png)
+
+
+__Bonus tasks__
+- Sort the numbers in ascending order. Note that method `sort` does not work for number arrays as one might expect.
+- Style the numbers using the CSS rules in the template.
+
+>![](media/lottery2.png)

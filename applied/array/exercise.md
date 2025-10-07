@@ -1,4 +1,4 @@
-# Table
+# Array
 
 We have randomly generated dice numbers using the Math.random() function: `Math.floor(Math.random() * 6 + 1)`.
 
