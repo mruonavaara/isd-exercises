@@ -34,12 +34,12 @@ There may be updates to this repository in the future. To update the assignments
 **Basic exercises:**
 - [HTML](basic/html/html.md)
 - [JavaScript basics](basic/js_basics/js_basics.md)
-- [Conditional statements](basic/conditional_statement/conditional_statement.md)
+- [Conditional statements](basic/conditional_statements/conditional_statements.md)
 - [Loops](basic/loops/loops.md)
 - [Arrays](basic/arrays/arrays.md)
 
 **Applied exercises:**
-- [Conditional statements](applied/conditional_statement/exercise.md)
+- [Conditional statements](applied/conditional_statements/exercise.md)
 - [Loops](applied/loops/exercise.md)
 - [Functions and loops](applied/functions_and_loops/exercise.md)
 - [Arrays](applied/arrays/exercise.md)
