@@ -24,7 +24,7 @@ function run(f, ...args) {
         println(`${f}(${args})`);
         return eval(f)(...args);
     } catch (e) {
-        printError(`An error occurred of function ${f} is not defined`);
+        printError(`An error occurred: ${e}`);
         console.error(e);
     }
 }

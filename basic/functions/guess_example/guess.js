@@ -17,5 +17,5 @@ function guess() {
         // guessCount = 0;
     }
 
-    document.getElementById('result') = text;
+    document.getElementById('result').innerHTML = text;
 };
